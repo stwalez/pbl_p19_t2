@@ -8,3 +8,7 @@ module "module_aws_s3_webapp" {
   prefix = "dev"
   region = "us-east-1"
 }
+
+output "s3_endpoint" {
+  value = module.module_aws_s3_webapp.endpoint
+}
